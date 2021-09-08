@@ -1,0 +1,150 @@
+package com.khuzz.software.jazirapro.coran.fragments
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.khuzz.software.jazirapro.R
+import com.khuzz.software.jazirapro.coran.SouratesHelper
+import com.khuzz.software.jazirapro.coran.adapter.SouratesAdapter
+
+class SouratesFragment : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_sourates, container, false)
+
+        val souratesRecyclerView = view.findViewById<RecyclerView>(R.id.sourates_recycler)
+
+        souratesRecyclerView.setHasFixedSize(true)
+        souratesRecyclerView.setLayoutManager(LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false))
+
+        val souratesList = arrayListOf<SouratesHelper>()
+        souratesList.add(SouratesHelper("01 Prologue (Al-Fatiha)","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("02 La vache (Al-Baqarah)","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("03 La famille d'Imran (Al-Imran)","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("04 Les femmes (An-Nisa)","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("05 La table servie (Al-Maidah)","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("06 Les bestiaux (Al-Anam)","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("07 AL-Araf","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("08 Le butin (Al-Anfal)","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("09 Le repentir (At-Tawbah)","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("10 Jonas (Yunus)","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("11 Hûd","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("12 Joseph (Yusuf)","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("13 Le tonnerre (Ar-Raad) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("14 Abraham (Ibrahim) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("15 Al-Hijrr ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("16 Les abeilles (An-Nahl) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("17 Le voyage nocturne (Al-Isra) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("18 La caverne (Al-Kahf) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("19 Marie (Maryam) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("20 Ta-Ha ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("21 Al-Anbiya ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("22 Le pélerinage (Al-Hajj) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("23 Les croyants (Al-Muminune) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("24 La lumière (An-Nur) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("25 Le discernement (Al Furqane) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("26 Les poètes (As-Shuaraa) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("27 Les fourmis (An-Naml) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("28 Le récit (Al-Qasas) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("29 L'araignée (Al-Ankabut) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("30 Les romains (Ar-Rum) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("31 Luqman ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("32 La prosternation (As-Sajda) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("33 Les coalisés (Al-Ahzab) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("34 Saba ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("35 Le Créateur (Fatir) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("36 Ya-Sin ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("37 Les rangés (As-Saffat) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("38 Sad ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("39 Les groupes (Az-Zumar) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("40 Le pardonneur (Gafir) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("41 Les versets détaillés (Fussilat) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("42 La consultation (Achoura) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("43 L'ornement (Azzukhruf) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("44 La fumée (Ad-Dukhan) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("45 L'agenouillée (Al-Jathya) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("46 Al-Ahqaf ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("47 Muhammad ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("48 La victoire éclatante (Al-Fath) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("49 Les appartements (Al-Hujurat) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("50 Qaf ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("51 Qui éparpillent (Ad-Dariyat) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("52 At-Tur ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("53 L'étoile (An-Najm) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("54 La lune (Al-Qamar) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("55 Le Tout Miséricordieux (Ar-Rahman) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("56 L'événement (Al-Waqi'a) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("57 Le fer (Al-Hadid) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("58 La discussion (Al-Mujadalah) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("59 L'exode (Al-Hasr) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("60 L'éprouvée (Al-Mumtahanah) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("61 Le rang (As-Saff) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("62 Le vendredi (Al-Jumua) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("63 Les hypocrites (Al-Munafiqun) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("64 La grande perte (At-Tagabun) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("65 Le divorce (At-Talaq) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("66 L'interdiction (At-Tahrim) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("67 La royauté (Al-Mulk) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("68 La plume (Al-Qalam) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("69 Celle qui montre la vérité (Al- Haqqah) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("70 Les voies d'ascension (Al- Maarij) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("71 Noé (Nuh) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("72 Les djinns (Al-Jinn) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("73 L'enveloppé (Al-Muzzamil) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("74 Le revêtu d'un manteau (Al-Muddattir) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("75 La résurrection (Al-Qiyamah) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("76 L'homme (Al-Insan) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("77 Les envoyés (Al-Mursalate) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("78 La nouvelle (An-Naba) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("79 Les anges qui arrachent les âmes (An-Naziate) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("80 Il s'est renfrogné (Abasa) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("81 L'obscurcissement (At-Takwir) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("82 La rupture (Al-Infitar) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("83 Les fraudeurs (Al-Mutaffifune) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("84 La déchirure (Al-Insiqaq) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("85 Les constellations (Al-Buruj) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("86 L'astre nocturne (At-Tariq) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("87 Le Très-Haut (Al-Ala) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("88 L'enveloppante (Al-Gasiyah) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("89 L'aube (Al-Fajr) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("90 La cité (Al-Balad) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("91 Le soleil (Ach-Chams) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("92 La nuit (Al-Layl) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("93 Le jour montant ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("94 L'ouverture (As-Sarh) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("95 Le figuier (At-Tin) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("96 L'adhérence (Al-Alaq) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("97 La Destinée (Al-Qadr) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("98 La preuve (Al-Bayyinah) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("99 La secousse (Az-Zalzalah) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("100 Les coursiers (Al-Adiyate) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("101 Le fracas (Al-Qariah) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("102 La course aux richesses (At-Takatur) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("103 Le temps (Al-Asr) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("104 Les calomniateurs (Al-Humazah) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("105 L'éléphant (Al-Fil) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("106 Qoraïsh ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("107 L'ustensile (Al-Maun) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("108 L'abondance (Al-Kawtar) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("109 Les infidèles (Al-Kafirune) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("110 Les secours (An-Nasr) ","médinoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("111 Les fibres (Al-Masad) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("112 Le monothéisme pur (Al-Ihlas) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("113 L'aube naissante (Al-Falaq) ","mequoise",R.drawable.ic_coran))
+        souratesList.add(SouratesHelper("114 Les hommes (An-Nas) ","mequoise",R.drawable.ic_coran))
+        souratesRecyclerView.adapter = SouratesAdapter(souratesList)
+        souratesRecyclerView.setAdapter(souratesRecyclerView.adapter)
+
+        return view
+
+    }
+
+}

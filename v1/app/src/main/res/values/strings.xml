@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Jazira Pro</string>
+
+    <!-- Splash Screen -->
+
+
+    <!-- Page d'accueil Ousiikumû -->
+    <string name="saws_ar"> صَلَّىٰ اللّٰهُ عَلَيْهِ وَسَلَّمْ</string>
+
+    <!-- Menu  -->
+    <string name="category">Catégories</string>
+
+
+    <string name="home">Accueil</string>
+    <string name="coran">Coran</string>
+    <string name="madhu">Madhu</string>
+    <string name="fiqh">Fiqh</string>
+    <string name="wasiyaath">Wasiyaath</string>
+    <string name="duaa">Duaa</string>
+    <string name="bibliothèques">Bibliothèque</string>
+    <string name="channel_name">Jazira TV</string>
+    <string name="day_bayt">Bayt du jour</string>
+
+    <string name="day_verset">Verset du jour</string>
+    <string name="share">Partager</string>
+    <string name="view_all">Voir Tout</string>
+
+
+    <string name="sourates">Sûrates</string>
+    <string name="juzz">Juzz</string>
+    <string name="favori">Favoris</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="rate_us">Noter l\'application</string>
+    <string name="slogan_name">أَلْإِخْوَانُ فِي ٱللهِ وَ فِي مَدْحِ رَسُولِ ٱلله</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/drawable/biblio_bcg_un.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/activity_accueil.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/activity_coran_screen.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/activity_juzz_viewer.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/activity_khutba_pdf_reader.xml" value="0.18819655521783182" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/activity_sourates_viewer.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/fragment_juzz.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/fragment_sourates.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/fragment_sourates_favori.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/livre_biblio_model.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/sourates_recycler_model.xml" value="0.18819655521783182" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/layout/splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/menu/bottom_sourates.xml" value="0.48928571428571427" />
+        <entry key="..\:/Users/mouha/OneDrive/Bureau/SKILLS/DEV/JaziraPro/v1/app/src/main/res/menu/main_menu.xml" value="0.2861111111111111" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
